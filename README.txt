@@ -24,4 +24,4 @@ Notice that the events do not need to be in order, and the event names can have 
 
 DOWNLOAD INSTRUCTIONS
 ----------------------
-To run the Schedule.jar and img folder must be in the same directory. The img folder must be called 'img' and none of the .txt files may be renamed.
+To run, download Schedule.jar and img.7z. Put both of these files in the same directory and extract img.7z to /img/ so that all the .txt files are in a directory named img. If you cannot extract img.7z you will need to download 7zip.
