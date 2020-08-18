@@ -20,3 +20,8 @@ Some Other Task;17:30;20:00
 ----------
 
 Notice that the events do not need to be in order, and the event names can have spaces in them.
+
+
+DOWNLOAD INSTRUCTIONS
+----------------------
+To run the Schedule.jar and img folder must be in the same directory. The img folder must be called 'img' and none of the .txt files may be renamed.
