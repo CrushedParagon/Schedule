@@ -21,6 +21,8 @@ Some Other Task;17:30;20:00
 
 Notice that the events do not need to be in order, and the event names can have spaces in them.
 
+After running, the program will save copies of the two schedules to WinterSchedule.png and FallSchedule.png to the directory it is running from
+
 
 DOWNLOAD INSTRUCTIONS
 ----------------------
