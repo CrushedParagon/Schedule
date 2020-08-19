@@ -22,8 +22,7 @@ public class Schedule{
             
          }
       }
-      Rects.drawGUI(0);//draws the GUI in Rects twice, once for Fall, one for Winter
-      Rects.drawGUI(1);
+      Rects.drawGUI();//draws the GUI in Rects twice, once for Fall, one for Winter
    }
    
    //returns a 2D array for use by the GUI

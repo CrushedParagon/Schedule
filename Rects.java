@@ -33,18 +33,30 @@ public class Rects extends JPanel{
       points=Schedule.parseForGUI(toParse);//gets the 2D array from Schedule's pareseForGUI method
       names=Schedule.getNames();//initializes the names array
    }
-   public static void drawGUI(int semester){//draws the GUI by taking in an int for semester
-      Rects panel=new Rects(semester);//calls the constructor for this class
-      panel.setPreferredSize(new Dimension(WINDOW_WIDTH,WINDOW_HEIGHT));//sets dimensions according to above constants
+   public static void drawGUI(){//draws the GUI by taking in an int for semester
+      Rects panel=new Rects(0);//calls the constructor for this class
+      Rects panel2=new Rects(1);
+      
+      panel.setPreferredSize(new Dimension(WINDOW_WIDTH,WINDOW_HEIGHT));
+      panel2.setPreferredSize(new Dimension(WINDOW_WIDTH,WINDOW_HEIGHT));
+      
+      
+      JTabbedPane screen=new JTabbedPane();
+
       
       JFrame frame=new JFrame("Schedule");//creates the frame
       
+      screen.addTab("Fall",panel);
+      screen.addTab("Winter",panel2);
+      
+      frame.getContentPane().add(screen);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      frame.getContentPane().add(panel);//adds panel
       frame.pack();
       frame.setLocationByPlatform(true);
       frame.setVisible(true);
-      saveImage(panel,semester);//calls the method that saves the images
+      
+      saveImage(panel,0);
+      saveImage(panel2,1);
    }
    
    @Override
