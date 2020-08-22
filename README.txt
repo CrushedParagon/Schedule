@@ -1,29 +1,31 @@
-This is a program that reads in the 14 .txt files to create a schedule. This is specifically created for school, so it's split into fall and winter by day.
+This program creates a schedule using the jar files provided.
 
-By default it will only read in values from 8:30am to 10pm, although if you change the constants in the Rects.java file you can alter the range of time.
-
-The .txt files follow a very strict format. I haven't implemented error checking yet so make sure you follow the format well.
-
-Line 1 must be an integer that represents how many events occur on that day.
-
-All other lines follow the format
-Event;Start time;End Time
-The start and end times must be in 24 hour notation, and should not have excess whitespace.
-
-An example of a valid file would be
 ----------
-4
-Statistics;10:00;17:30
-Joint Probability;7:00;9:00
-Risk Analysis;9:10;9:50
-Some Other Task;17:30;20:00
+Using the jar files
 ----------
 
-Notice that the events do not need to be in order, and the event names can have spaces in them.
+This program comes with 2 .jar files, AutomaticSchedule.jar and ViewSchedule.jar
 
-After running, the program will save copies of the two schedules to WinterSchedule.png and FallSchedule.png to the directory it is running from
+AutomaticSchedule brings up the creator, which allows you to add classes. To use this enter the class name in the appropriate text field, and the start and end times in the format hh:mm.
+
+Example: Name: STAT 1400
+	 Start Time: 12:45
+	 End time: 14:30
+
+After entering this information click "Add" to add the class to that day.
+
+Clicking reset will remove all classes for that one specific day, while leaving the others undamaged
+
+Clicking save will create the txt files in the img folder, overriting any files that were there before
+
+Clicking View Schedule will launch the program with the current .txt files.
 
 
-DOWNLOAD INSTRUCTIONS
-----------------------
-To run, download Schedule.jar and img.7z. Put both of these files in the same directory and extract img.7z to /img/ so that all the .txt files are in a directory named img. If you cannot extract img.7z you will need to download 7zip.
+The ViewSchedule .jar file will show the schedule without launching the creator
+
+
+-------
+How to Run
+-------
+Download the .jar files from the github page.
+While not required, puttting it in its own directory is a good idea to better keep track of the generated .png files and the img directory
