@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.awt.event.*;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.File;
 
 public class autoSchedule extends JTabbedPane{
 
 
    
    public static void main(String[] args){
+      new File("./img").mkdirs();
       makeGUI();
    }
    
