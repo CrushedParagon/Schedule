@@ -50,7 +50,7 @@ public class Rects extends JPanel{
       screen.addTab("Winter",panel2);
       
       frame.getContentPane().add(screen);
-      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
       frame.pack();
       frame.setLocationByPlatform(true);
       frame.setVisible(true);
